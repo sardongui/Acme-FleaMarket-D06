@@ -109,32 +109,12 @@ master.menu.sponsor = Patrocinador
 master.menu.sponsor.list-banner = Banners
 master.menu.sponsor.create-banner = Crear banner
 
-# master.menu.consumer ##########################################################
-
-master.menu.consumer = Consumidor
-master.menu.consumer.favourite-link = Enlace favorito
-master.menu.consumer.favourite-link-donaire = Enlace favorito de Donaire
-master.menu.consumer.favourite-link-martinez = Enlace favorito de Martinez
-
-master.menu.consumer.list-donaire-bulletin = Boletín de Donaire
-master.menu.consumer.create-donaire-bulletin = Publicar en boletín de Donaire
-master.menu.consumer.list-martinez-bulletin = Boletín de Martinez
-master.menu.consumer.create-martinez-bulletin = Publicar en boletín de Martinez
-master.menu.consumer.list-suggestion = Lista de sugerencias
-master.menu.consumer.list-figment = Lista de productos
-master.menu.consumer.list-advertisement = Lista de anuncios
-master.menu.consumer.list-new = Novedades
-master.menu.consumer.list-material-sheet = Hojas de inventario
-master.menu.consumer.list-tool-sheet = Hojas de herramientas
-
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
 master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
-master.menu.user-account.consumer = Datos de consumidor
-master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.become-supplier = Hazte distribuidor
 master.menu.user-account.supplier = Datos de distribuidor
 master.menu.user-account.become-buyer = Hazte comprador

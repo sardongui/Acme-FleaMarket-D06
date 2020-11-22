@@ -108,32 +108,12 @@ master.menu.auditor.list-audit-record = List of Audit Record
 master.menu.auditor.list-item = List of My Items
 master.menu.auditor.list-not-mine-audit-record=List of Others Items
 
-# master.menu.consumer ##########################################################
-
-master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
-master.menu.consumer.favourite-link-donaire = Donaire's favourite link
-master.menu.consumer.favourite-link-martinez = Martinez's favourite link
-
-master.menu.consumer.list-donaire-bulletin = Donaire's bulletin
-master.menu.consumer.create-donaire-bulletin = Publish in Donaire's bulletin
-master.menu.consumer.list-martinez-bulletin = Martinez's bulletin
-master.menu.consumer.create-martinez-bulletin = Publish in Martinez's bulletin
-master.menu.consumer.list-suggestion = List of Suggestion
-master.menu.consumer.list-figment = List of Figments
-master.menu.consumer.list-advertisement = List of Advertisement
-master.menu.consumer.list-new = List of News
-master.menu.consumer.list-material-sheet = Material sheets
-master.menu.consumer.list-tool-sheet = Tool sheets
-
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
 master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
-master.menu.user-account.consumer = Consumer data
-master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.become-supplier = Become a supplier
 master.menu.user-account.supplier = Supplier data
 master.menu.user-account.become-buyer = Become a buyer
