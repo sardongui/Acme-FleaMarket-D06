@@ -1,5 +1,5 @@
 /*
- * Provider.java
+ * Auditor.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *

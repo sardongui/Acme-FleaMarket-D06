@@ -79,11 +79,6 @@ master.menu.administrator.create-advertisement = Create Advertisement
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.chart = Chart
 
-# master.menu.provider ########################################################
-
-master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
-
 master.menu.supplier ########################################################
 
 master.menu.supplier =Supplier
@@ -112,8 +107,6 @@ master.menu.auditor.list-not-mine-audit-record=List of Others Items
 
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
-master.menu.user-account.provider = Provider data
-master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.become-supplier = Become a supplier
 master.menu.user-account.supplier = Supplier data
 master.menu.user-account.become-buyer = Become a buyer
