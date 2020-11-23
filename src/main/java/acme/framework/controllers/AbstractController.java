@@ -41,6 +41,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 
 import acme.components.CustomCommand;
+import acme.components.RandomBannerRepository;
 import acme.framework.components.BasicCommand;
 import acme.framework.components.Command;
 import acme.framework.components.CommandManager;
@@ -80,6 +81,10 @@ public abstract class AbstractController<R extends UserRole, E> {
 	@Autowired
 	private PlatformTransactionManager	transactionManager;
 	private TransactionStatus			transactionStatus;
+
+	// Repositories management ------------------------------------------------
+	@Autowired
+	RandomBannerRepository				randomBannerRepository;
 
 
 	private void startTransaction() {
@@ -241,6 +246,15 @@ public abstract class AbstractController<R extends UserRole, E> {
 			// HINT: let's build the requested view and let's add some predefined attributes to the model.
 
 			result = this.buildRequestedView(request, response);
+
+			//RANDOM BANNER
+			if (this.randomBannerRepository.findRandomBanner() != null) {
+				String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+				result.addObject("randomBanner", banner);
+			} else {
+				result.addObject("randomBanner", "images/banner.png");
+			}
+
 			result.addObject("command", endpoint);
 			result.addObject("principal", request.getPrincipal());
 
