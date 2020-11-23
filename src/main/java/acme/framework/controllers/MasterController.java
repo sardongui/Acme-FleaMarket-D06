@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -31,6 +32,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import acme.components.RandomBannerRepository;
 import acme.framework.entities.Administrator;
 import acme.framework.helpers.PrincipalHelper;
 import acme.framework.utilities.RememberMeLogoutHandler;
@@ -40,7 +42,10 @@ public class MasterController implements ApplicationContextAware {
 
 	// Internal state ---------------------------------------------------------
 
-	private ConfigurableApplicationContext context;
+	private ConfigurableApplicationContext	context;
+
+	@Autowired
+	RandomBannerRepository					randomBannerRepository;
 
 
 	// ApplicationContextAware interface --------------------------------------
@@ -60,6 +65,14 @@ public class MasterController implements ApplicationContextAware {
 
 		result = new ModelAndView("redirect:/master/welcome");
 
+		//RANDOM BANNER
+		if (this.randomBannerRepository.findRandomBanner() != null) {
+			String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+			result.addObject("randomBanner", banner);
+		} else {
+			result.addObject("randomBanner", "images/banner.png");
+		}
+
 		return result;
 	}
 
@@ -68,6 +81,14 @@ public class MasterController implements ApplicationContextAware {
 		ModelAndView result;
 
 		result = new ModelAndView("master/welcome");
+
+		//RANDOM BANNER
+		if (this.randomBannerRepository.findRandomBanner() != null) {
+			String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+			result.addObject("randomBanner", banner);
+		} else {
+			result.addObject("randomBanner", "images/banner.png");
+		}
 
 		return result;
 	}
@@ -82,6 +103,14 @@ public class MasterController implements ApplicationContextAware {
 		result.addObject("username", "");
 		result.addObject("password", "");
 		result.addObject("remember", false);
+
+		//RANDOM BANNER
+		if (this.randomBannerRepository.findRandomBanner() != null) {
+			String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+			result.addObject("randomBanner", banner);
+		} else {
+			result.addObject("randomBanner", "images/banner.png");
+		}
 
 		return result;
 	}
@@ -117,6 +146,14 @@ public class MasterController implements ApplicationContextAware {
 		result = new ModelAndView();
 		result.setViewName("master/company");
 
+		//RANDOM BANNER
+		if (this.randomBannerRepository.findRandomBanner() != null) {
+			String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+			result.addObject("randomBanner", banner);
+		} else {
+			result.addObject("randomBanner", "images/banner.png");
+		}
+
 		return result;
 	}
 
@@ -126,6 +163,14 @@ public class MasterController implements ApplicationContextAware {
 
 		result = new ModelAndView();
 		result.setViewName("master/license");
+
+		//RANDOM BANNER
+		if (this.randomBannerRepository.findRandomBanner() != null) {
+			String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+			result.addObject("randomBanner", banner);
+		} else {
+			result.addObject("randomBanner", "images/banner.png");
+		}
 
 		return result;
 	}
@@ -139,6 +184,14 @@ public class MasterController implements ApplicationContextAware {
 		result = new ModelAndView();
 		result.setStatus(HttpStatus.valueOf(response.getStatus()));
 		result.setViewName("master/panic");
+
+		//RANDOM BANNER
+		if (this.randomBannerRepository.findRandomBanner() != null) {
+			String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+			result.addObject("randomBanner", banner);
+		} else {
+			result.addObject("randomBanner", "images/banner.png");
+		}
 
 		return result;
 	}
@@ -156,6 +209,14 @@ public class MasterController implements ApplicationContextAware {
 
 		result = new ModelAndView();
 		result.setViewName("master/referrer");
+
+		//RANDOM BANNER
+		if (this.randomBannerRepository.findRandomBanner() != null) {
+			String banner = this.randomBannerRepository.findRandomBanner().getPicture();
+			result.addObject("randomBanner", banner);
+		} else {
+			result.addObject("randomBanner", "images/banner.png");
+		}
 
 		return result;
 	}

@@ -240,27 +240,27 @@
 	
 	<!-- Banners -->
 	<bean id="banner01" class="acme.entities.banners.Banner">
-		<property name="picture" value="https://www.imagen-banner.com"/>
-		<property name="slogan" value="Esto es un banner de ejemplo"/>
+		<property name="picture" value="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/sale-banner-design-template-b25d655928fd85b0d6142a23863227df_screen.jpg?ts=1566963712"/>
+		<property name="slogan" value="50% OFF"/>
 		<property name="target" value="https://www.target1.com"/>
 		<property name="creditCard" ref="creditCard01" />
 	</bean>
 	
 	<bean id="banner02" class="acme.entities.banners.Banner">
-		<property name="picture" value="https://www.imagen-banner2.com"/>
-		<property name="slogan" value="Esto es otro banner de ejemplo"/>
+		<property name="picture" value="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/christmas-santa-sale-offer-banner-design-template-d7b3b8f4f716dd5c9d5f525665bbff5c_screen.jpg?ts=1561432299"/>
+		<property name="slogan" value="HO-HO-HO Holiday Sale"/>
 		<property name="target" value="https://www.target2.com"/>
 	</bean>
 	
 	<bean id="banner03" class="acme.entities.banners.Banner">
-		<property name="picture" value="https://www.imagen-banner3.com"/>
-		<property name="slogan" value="Otro banner más"/>
+		<property name="picture" value="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/regal-christmas-sale-banner-design-template-bd79a3136aa1cd6cc5d7886ad63051d7_screen.jpg?ts=1561432853"/>
+		<property name="slogan" value="Annual Holiday"/>
 		<property name="target" value="https://www.target3.com"/>
 	</bean>
 	
 	<bean id="banner04" class="acme.entities.banners.Banner">
-		<property name="picture" value="https://www.imagen-banner4.com"/>
-		<property name="slogan" value="Otro banner más"/>
+		<property name="picture" value="https://image.freepik.com/free-vector/black-friday-sale-banner-design-with-shopping-trolly_1055-9167.jpg"/>
+		<property name="slogan" value="Black Friday"/>
 		<property name="target" value="https://www.target4.com"/>
 	</bean>
 	
