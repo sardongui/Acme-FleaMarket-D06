@@ -20,15 +20,18 @@
 		<canvas id="numberOfNewsGroupedByCategory"></canvas>
 	</div>
 	<br></br>
+	<br></br>
 	<div class="w-100 text-center">
 		<b><acme:message code="administrator.chart.form.label.ratioOfWarningNewsVersusRestOfit"/></b>
 	    <canvas id="ratioOfWarningNewsVersusRestOfit"></canvas>
 	</div>
 	<br></br>
+	<br></br>
 	<div class="w-100 text-center">
 		<b><acme:message code="administrator.chart.form.label.numberOfAdvertisementsGroupedByDiscount"/></b>
 		<canvas id="numberOfAdvertisementsGroupedByDiscount"></canvas>
 	</div>
+	<br></br>
 	<br></br>
 		<div class="w-100 text-center">
 		<b><acme:message code="administrator.chart.form.label.ratioOfItemsGroupedByItemCategory"/></b>
@@ -41,8 +44,9 @@
 		<canvas id="ratioOfSponsorsGroupedByCreditCard"></canvas>
 	</div>
 	<br></br>
-	<div>
-	<acme:message code="administrator.chart.form.label.RequestsByStatus"/>
+	<br></br>
+	<div class="w-100 text-center">
+		<b><acme:message code="administrator.chart.form.label.RequestsByStatus"/></b>
     	<canvas id="ratioOfRequestsGroupedByStatus"></canvas>
 	</div>
 	

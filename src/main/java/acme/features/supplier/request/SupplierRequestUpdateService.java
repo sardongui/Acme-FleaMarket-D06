@@ -1,5 +1,5 @@
 /*
- * AuthenticatedProviderUpdateService.java
+ * SupplierRequestUpdateService.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -36,12 +36,10 @@ public class SupplierRequestUpdateService implements AbstractUpdateService<Suppl
 	private SupplierRequestRepository repository;
 
 
-	// AbstractUpdateService<Authenticated, Provider> interface ---------------
-
 	@Override
 	public boolean authorise(final Request<RequestEntity> request) {
 		assert request != null;
-		
+
 		boolean result;
 		int requestId;
 		RequestEntity r;
@@ -71,13 +69,13 @@ public class SupplierRequestUpdateService implements AbstractUpdateService<Suppl
 		assert request != null;
 		assert entity != null;
 		assert model != null;
-		
+
 		String referenceItem = entity.getItem().getTicker();
 		model.setAttribute("referenceItem", referenceItem);
 		String itemSupplier = entity.getItem().getSupplier().getUserAccount().getUsername();
 		model.setAttribute("itemSupplier", itemSupplier);
 
-		request.unbind(entity, model, "quantity", "notes","status","rejectionJustification");
+		request.unbind(entity, model, "quantity", "notes", "status", "rejectionJustification");
 	}
 
 	@Override
@@ -85,10 +83,10 @@ public class SupplierRequestUpdateService implements AbstractUpdateService<Suppl
 		assert request != null;
 
 		RequestEntity result;
-			
+
 		int id;
-		
-		id= request.getModel().getInteger("id");
+
+		id = request.getModel().getInteger("id");
 		result = this.repository.findOneById(id);
 
 		return result;
@@ -99,7 +97,7 @@ public class SupplierRequestUpdateService implements AbstractUpdateService<Suppl
 		assert request != null;
 		assert entity != null;
 		assert errors != null;
-		
+
 		boolean statusHasErrors = errors.hasErrors("status");
 		if (!statusHasErrors) {
 			boolean rejectionJustificationHasErrors = errors.hasErrors("rejectionJustification");
@@ -114,7 +112,7 @@ public class SupplierRequestUpdateService implements AbstractUpdateService<Suppl
 	public void update(final Request<RequestEntity> request, final RequestEntity entity) {
 		assert request != null;
 		assert entity != null;
-		
+
 		RequestEntity result;
 		int id;
 

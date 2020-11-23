@@ -79,11 +79,6 @@ master.menu.administrator.create-advertisement = Create Anuncio
 master.menu.administrator.dashboard = Panel
 master.menu.administrator.chart = Gráfico
 
-# master.menu.provider ########################################################
-
-master.menu.provider = Proveedor
-master.menu.provider.favourite-link = Enlace favorito
-
 master.menu.auditor ########################################################
 master.menu.auditor =Auditor
 master.menu.auditor.list-audit-record = Lista de mis Registros de Auditoría
@@ -113,8 +108,6 @@ master.menu.sponsor.create-banner = Crear banner
 
 master.menu.user-account = Cuenta
 master.menu.user-account.general-data = Datos generales
-master.menu.user-account.provider = Datos de proveedor
-master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.become-supplier = Hazte distribuidor
 master.menu.user-account.supplier = Datos de distribuidor
 master.menu.user-account.become-buyer = Hazte comprador
