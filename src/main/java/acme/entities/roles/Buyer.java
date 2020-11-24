@@ -23,6 +23,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
+import acme.datatypes.Address;
 import acme.entities.creditCards.CreditCard;
 import acme.entities.requests.RequestEntity;
 import acme.framework.entities.UserRole;
@@ -49,7 +50,7 @@ public class Buyer extends UserRole {
 	private String						phone;
 
 	@NotBlank
-	private String						deliveryAddress;
+	private Address						deliveryAddress;
 
 	// Derived attributes -----------------------------------------------------
 

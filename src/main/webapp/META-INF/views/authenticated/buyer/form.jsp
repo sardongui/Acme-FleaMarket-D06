@@ -18,7 +18,7 @@
 <acme:form>
 	<acme:form-textbox code="authenticated.buyer.form.label.email" path="email"/>
 	<acme:form-textbox code="authenticated.buyer.form.label.phone" path="phone"/>
-	<acme:form-textbox code="authenticated.buyer.form.label.deliveryAddress" path="deliveryAddress"/>
+	<acme:form-address code="authenticated.buyer.form.label.deliveryAddress" path="deliveryAddress"/>
 	
 	<br/>
 	<fieldset>

@@ -587,7 +587,7 @@
 	<bean name="buyer1Buyer" class="acme.entities.roles.Buyer">
 		<property name="email" value="buyer1@acme.com" />
 		<property name="phone" value="+34 666777888" />
-		<property name="deliveryAddress" value="C/Inventada Nº5 2ºB"/>
+		<property name="deliveryAddress" value="Avda. Reina Mercedes, 3, Sevilla E41012, Spain"/>
 		<property name="creditCard" ref="creditCard02" />
 		<property name="userAccount" ref="buyer1UserAccount" />
 		<property name="requests">
@@ -624,7 +624,7 @@
 	<bean name="buyer2Buyer" class="acme.entities.roles.Buyer">
 		<property name="email" value="buyer2@acme.com" />
 		<property name="phone" value="+34 888555222" />
-		<property name="deliveryAddress" value="C/Otra calle inventada Nº2 5ºC"/>
+		<property name="deliveryAddress" value="12 Elmet St., SW-1212 London, United Kingdom"/>
 		<property name="creditCard" ref="creditCard03" />
 		<property name="userAccount" ref="buyer2UserAccount" />
 		<property name="requests">
